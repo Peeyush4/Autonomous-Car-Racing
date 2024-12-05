@@ -1,0 +1,18 @@
+Slurm job 8987588 running on
+gpu-b11-6.zaratan.umd.edu
+To run on 1 CPU cores across 1 nodes
+All nodes: gpu-b11-6
+Sat Nov 30 00:07:59 EST 2024
+/scratch/zt1/project/msml642/shared/Group9/pytorch_car_caring/code
+Loaded modules are:
+Currently Loaded Modulefiles:
+ 1) hpcc/deepthought2                                       
+ 2) gcc/11.3.0                                              
+ 3) hello-umd/1.5/gcc/11.3.0/nompi/zen2(default)            
+ 4) python/gcc/11.3.0/cuda/12.3.0/linux-rhel8-zen2/3.10.10  
+ 5) cuda/12.3.0/gcc/11.3.0/zen2(default)                    
+ 6) cudnn/8.9.7.29-12/gcc/11.3.0/zen2(default)              
+Job will be started out of 
+Using executable /cvmfs/hpcsw.umd.edu/spack-software/2023.11.20/linux-rhel8-zen2/gcc-11.3.0/hello-umd-1.5-o2uyvdepdbpr6orl56p6qpfcem53357l/bin/hello-umd
+venv started
+slurmstepd: error: *** JOB 8987588 ON gpu-b11-6 CANCELLED AT 2024-12-01T00:08:24 DUE TO TIME LIMIT ***
