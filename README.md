@@ -39,6 +39,10 @@ A reinforcement learning project that implements a Proximal Policy Optimization 
 |   ├── testing_with_residual_blocks.py                         # Training for Residual Blocks
 |   └── testing.py                                              # Training for Conventional neural network
 ├── plots/                 # Utilities for visualization and performance tracking
+|   ├── *.png                               # Plots for respective parameters
+|   ├── *.py                                # Python files top analyze plots
+|   └── *.txt                               # Logs for repective model
+├── slurm_outputs/         # Outputs while training in Zaratan HPC
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
 ```
@@ -83,6 +87,9 @@ python training.py
 
 ---
 
+## **Zaratan cluster**
+
+---
 
 ### Test the PPO agent
 First, go to the `testing/` folder.
@@ -120,9 +127,9 @@ Combines:
 ## **Results**
 
 ### **Training Performance**
-- Convolutional Neural Network achieves highest moving average after 3000 episodes.
-- Convolutional Neural Network with LeakyReLU achieves highest moving average faster, which is after 2100 epochs.
-- Residual blocks reach peak very fast, i.e within 2000 epochs but the moving average is not that great.
+- Maximum maving average score for CNN: 624.99 at epoch 5840
+- Maximum maving average score for CNN with Leaky ReLU: 678.61 at epoch 2230
+- Maximum maving average score for Residual Blocks: 569.75 at epoch 2430
 
 ---
 
