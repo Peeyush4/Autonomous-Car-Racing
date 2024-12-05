@@ -17,17 +17,29 @@ A reinforcement learning project that implements a Proximal Policy Optimization 
 ## **Project Structure**
 ```plaintext
 .
-|-- training/              # Contains various scripts to train the agent
-    |-- training_DSP.py                     # Neural network containing Depthwise Separable Network
-    |-- training_resnet_no_weights.py       # Using ResNet without pretraining
-    |-- training_resnet.py                  # Using ResNet with ImageNet pretrained weights
-    |-- training_with_bottleneck.py         # Using Batchnorm after convolution
-    |-- training_with_leakyReLU.py          # Conventional neural network with leakyReLU
-    |-- training_with_residual_blocks.py    # Using Residual blocks 
-    |-- training.py                         # Conventional neural network
-|-- testing/               # Contains scripts to test and parameters
-|-- plots/                 # Utilities for visualization and performance tracking
-|-- requirements.txt       # Python dependencies
+├── training/              # Contains various scripts to train the agent
+|   ├── training_DSP.py                     # Neural network containing Depthwise Separable Network
+|   ├── training_resnet_no_weights.py       # Using ResNet without pretraining
+|   ├── training_resnet.py                  # Using ResNet with ImageNet pretrained weights
+|   ├── training_with_bottleneck.py         # Using Batchnorm after convolution
+|   ├── training_with_leakyReLU.py          # Conventional neural network with leakyReLU
+|   ├── training_with_residual_blocks.py    # Using Residual blocks 
+|   ├── training.py                         # Conventional neural network
+|   ├── *.sh                                # Bash files to train in UMD Zaratan HPC ()
+|   └──*.out                                # Output files when trained in HPC
+├── testing/               # Contains scripts to test and parameters
+|   ├── param_DSP_20000/                     # Parameters for Neural network containing Depthwise Separable Network
+|   ├── param_resnet_no_weights_20000/       # Parameters for Using ResNet without pretraining
+|   ├── param_resnet_20000/                  # Parameters for Using ResNet with ImageNet pretrained weights
+|   ├── param_with_bottleneck_20000/         # Parameters for Using Batchnorm after convolution
+|   ├── param_with_leakyReLU_20000/          # Parameters for Conventional neural network with leakyReLU
+|   ├── param_with_residual_blocks_20000/    # Parameters for Using Residual blocks 
+|   ├── param_20000/                         # Parameters for Conventional neural network
+|   ├── testing_with_leakyReLU.py                               # Training for Conventional neural network with LeakyRelU
+|   ├── testing_with_residual_blocks.py                         # Training for Residual Blocks
+|   └── testing.py                                              # Training for Conventional neural network
+├── plots/                 # Utilities for visualization and performance tracking
+├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
 ```
 
@@ -105,26 +117,19 @@ Combines:
 
 ---
 
-## **Evaluation**
-
-To test a trained agent:
-```bash
-python training.py -m
-```
-
----
-
 ## **Results**
 
 ### **Training Performance**
-- Achieves stable rewards after 100 episodes.
-- Moving average rewards plotted using `DrawLine`.
+- Convolutional Neural Network achieves highest moving average after 3000 episodes.
+- Convolutional Neural Network with LeakyReLU achieves highest moving average faster, which is after 2100 epochs.
+- Residual blocks reach peak very fast, i.e within 2000 epochs but the moving average is not that great.
 
 ---
 
 ## **Future Work**
 - Add recurrent layers (e.g., LSTM) for temporal context in decision-making.
-- Enhance generalization across diverse tracks.
+- Parallel training
+- Work more on different CNN architectures
 
 ---
 
