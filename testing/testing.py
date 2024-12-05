@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 import glob
 import os
-
+from tqdm import tqdm
 
 ################
 param_file_path = ''    
@@ -33,8 +33,10 @@ parser = argparse.ArgumentParser(description='Test the PPO agent for the CarRaci
 parser.add_argument('--action-repeat', type=int, default=8, metavar='N', help='repeat action in N frames (default: 12)')
 parser.add_argument('--img-stack', type=int, default=4, metavar='N', help='stack N image in a state (default: 4)')
 parser.add_argument('--seed', type=int, default=0, metavar='N', help='random seed (default: 0)')
-parser.add_argument('--render', action='store_true', help='render the environment')
+parser.add_argument('--render', action='store_true', default=False, help='render the environment. If record_video is also True, it will only record the video but not render')
 parser.add_argument('-n', '--final_epoch_testing', action='store_true', default=False, help='test the agent for the final epoch')
+parser.add_argument('--record_video', action='store_true', default=False, help='record the video')
+parser.add_argument('-r', '--total_runs', type=int, default=10, help="Number of experiments to conduct")
 args = parser.parse_args()
 
 use_cuda = torch.cuda.is_available()
@@ -51,12 +53,15 @@ class Env():
 
     def __init__(self):
         video_folder = "param_20000/"  # Directory to save the video
-        self.env = RecordVideo(
-            gymnasium.make('CarRacing-v2', render_mode='rgb_array', domain_randomize=True),
-            video_folder=video_folder,
-            episode_trigger=lambda x: True  # Record every episode
-        )
-        # self.env = gymnasium.make('CarRacing-v2', render_mode='human', domain_randomize=True)
+        self.env = gymnasium.make('CarRacing-v2', domain_randomize=True)
+        if args.render:
+            self.env = gymnasium.make('CarRacing-v2', render_mode='human', domain_randomize=True)
+        if args.record_video:
+            self.env = RecordVideo(
+                gymnasium.make('CarRacing-v2', render_mode='rgb_array', domain_randomize=True),
+                video_folder=video_folder,
+                episode_trigger=lambda x: True  # Record every episode
+            )
         # self.env.seed(args.seed)
         self.reward_threshold = self.env.spec.reward_threshold
 
@@ -188,11 +193,11 @@ if __name__ == "__main__":
     agent = Agent()
     agent.load_param()
     env = Env()
-
+    scores = []
     training_records = []
     running_score = 0
     state = env.reset()
-    for i_ep in range(10):
+    for i_ep in tqdm(range(args.total_runs)):
         score = 0
         state = env.reset()
 
@@ -207,3 +212,9 @@ if __name__ == "__main__":
                 break
 
         print('Ep {}\tScore: {:.2f}\t'.format(i_ep, score))
+        scores.append(score)
+
+    print('Average Score:', np.mean(scores))
+    print(f"Maximum score: {np.max(scores)}")
+    print(f"Minimum score: {np.min(scores)}")
+    print(f"Median score: {np.median(scores)}")

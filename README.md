@@ -158,6 +158,14 @@ Combines:
 - Maximum maving average score for CNN with Leaky ReLU: 678.61 at epoch 2230
 - Maximum maving average score for Residual Blocks: 569.75 at epoch 2430
 
+### **Testing Performance**
+| Model           | Maximum Score | Minimum Score | Average Score | Median Score |
+|-----------------|---------------|---------------|---------------|--------------|
+| CNN             | 910.1         | -17.93        | 676           | 847.77       |
+| CNN + LeakyReLU | 894.6         | -42.94        | 620.99        | 803.02       |
+| Residual Blocks | 897.8         | -39.53        | 616.57        | 827.66       |
+
+
 ---
 
 ## **Future Work**
