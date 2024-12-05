@@ -1,0 +1,40 @@
+MoviePy - Building video .\param_20000\rl-video-episode-0.mp4.
+MoviePy - Writing video .\param_20000\rl-video-episode-0.mp4
+
+MoviePy - Done !
+MoviePy - video ready .\param_20000\rl-video-episode-0.mp4
+Ep 0    Score: 40.17
+MoviePy - Building video .\param_20000\rl-video-episode-1.mp4.
+MoviePy - Writing video .\param_20000\rl-video-episode-1.mp4
+
+MoviePy - Done !                                                                                                                                       
+MoviePy - video ready .\param_20000\rl-video-episode-1.mp4
+Ep 1    Score: 906.30
+MoviePy - Building video .\param_20000\rl-video-episode-2.mp4.
+MoviePy - Writing video .\param_20000\rl-video-episode-2.mp4
+
+MoviePy - Done !                                                                                                                                       
+MoviePy - video ready .\param_20000\rl-video-episode-2.mp4
+Ep 2    Score: 829.85
+MoviePy - Building video .\param_20000\rl-video-episode-3.mp4.
+MoviePy - Writing video .\param_20000\rl-video-episode-3.mp4
+
+MoviePy - Done !                                                                                                                                       
+MoviePy - video ready .\param_20000\rl-video-episode-3.mp4
+Ep 3    Score: 877.40
+Ep 4    Score: 889.22
+Ep 5    Score: 24.28
+MoviePy - Building video .\param_20000\rl-video-episode-4.mp4.
+MoviePy - Writing video .\param_20000\rl-video-episode-4.mp4
+
+MoviePy - Done !
+MoviePy - video ready .\param_20000\rl-video-episode-4.mp4
+Ep 6    Score: 867.81
+Ep 7    Score: 891.43
+Ep 8    Score: 861.58
+MoviePy - Building video .\param_20000\rl-video-episode-5.mp4.
+MoviePy - Writing video .\param_20000\rl-video-episode-5.mp4
+
+MoviePy - Done !
+MoviePy - video ready .\param_20000\rl-video-episode-5.mp4
+Ep 9    Score: 845.98

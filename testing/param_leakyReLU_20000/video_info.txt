@@ -1,0 +1,55 @@
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-0.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-0.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-0.mp4
+Ep 0    Score: 859.40
+Ep 1    Score: 379.07
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-1.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-1.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-1.mp4
+Ep 2    Score: 886.80
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-2.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-2.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-2.mp4
+Ep 3    Score: 799.13
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-3.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-3.mp4
+
+MoviePy - Done !
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-3.mp4
+Ep 4    Score: 881.30
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-4.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-4.mp4
+
+MoviePy - Done !
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-4.mp4
+Ep 5    Score: 853.01
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-5.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-5.mp4
+
+MoviePy - Done !
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-5.mp4
+Ep 6    Score: 881.30
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-6.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-6.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-6.mp4
+Ep 7    Score: 896.50
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-7.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-7.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-7.mp4
+Ep 8    Score: 880.03
+MoviePy - Building video .\param_leakyReLU_20000\rl-video-episode-8.mp4.
+MoviePy - Writing video .\param_leakyReLU_20000\rl-video-episode-8.mp4
+
+MoviePy - Done !
+MoviePy - video ready .\param_leakyReLU_20000\rl-video-episode-8.mp4
+Ep 9    Score: 859.35

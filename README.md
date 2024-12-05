@@ -143,7 +143,3 @@ Combines:
 ## **Acknowledgments**
 - [Gymnasium](https://gymnasium.farama.org/environments/box2d/car_racing/) for the CarRacing environment.
 - [PyTorch](https://pytorch.org/) for deep learning tools.
-
----
-
-Let me know if you want adjustments or additional sections like "Citations" or "Troubleshooting"!

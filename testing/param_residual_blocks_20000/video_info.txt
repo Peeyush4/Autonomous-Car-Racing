@@ -1,0 +1,40 @@
+MoviePy - Building video .\param_residual_blocks_20000\rl-video-episode-0.mp4.
+MoviePy - Writing video .\param_residual_blocks_20000\rl-video-episode-0.mp4
+
+MoviePy - Done !
+MoviePy - video ready .\param_residual_blocks_20000\rl-video-episode-0.mp4
+Ep 0    Score: 783.06
+Ep 1    Score: 44.14
+MoviePy - Building video .\param_residual_blocks_20000\rl-video-episode-1.mp4.
+MoviePy - Writing video .\param_residual_blocks_20000\rl-video-episode-1.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_residual_blocks_20000\rl-video-episode-1.mp4
+Ep 2    Score: 691.97
+MoviePy - Building video .\param_residual_blocks_20000\rl-video-episode-2.mp4.
+MoviePy - Writing video .\param_residual_blocks_20000\rl-video-episode-2.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_residual_blocks_20000\rl-video-episode-2.mp4
+Ep 3    Score: 870.70
+MoviePy - Building video .\param_residual_blocks_20000\rl-video-episode-3.mp4.
+MoviePy - Writing video .\param_residual_blocks_20000\rl-video-episode-3.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_residual_blocks_20000\rl-video-episode-3.mp4
+Ep 4    Score: 850.96
+Ep 5    Score: 56.07
+MoviePy - Building video .\param_residual_blocks_20000\rl-video-episode-4.mp4.
+MoviePy - Writing video .\param_residual_blocks_20000\rl-video-episode-4.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_residual_blocks_20000\rl-video-episode-4.mp4
+Ep 6    Score: 859.59
+Ep 7    Score: 323.02
+MoviePy - Building video .\param_residual_blocks_20000\rl-video-episode-5.mp4.
+MoviePy - Writing video .\param_residual_blocks_20000\rl-video-episode-5.mp4
+
+MoviePy - Done !                                                                                                                                 
+MoviePy - video ready .\param_residual_blocks_20000\rl-video-episode-5.mp4
+Ep 8    Score: 872.00
+Ep 9    Score: 56.08

@@ -3,6 +3,7 @@ import argparse
 import numpy as np
 
 import gymnasium
+from gymnasium.wrappers.record_video import RecordVideo
 import torch
 import torch.nn as nn
 import glob
@@ -49,7 +50,12 @@ class Env():
     """
 
     def __init__(self):
-        self.env = gymnasium.make('CarRacing-v2', render_mode='human', domain_randomize=True)
+        self.env = RecordVideo(
+            gymnasium.make('CarRacing-v2', render_mode='rgb_array', domain_randomize=True),
+            video_folder=param_folder,
+            episode_trigger=lambda x: True  # Record every episode
+        )
+        # self.env = gymnasium.make('CarRacing-v2', render_mode='human', domain_randomize=True)
         # self.env.seed(args.seed)
         self.reward_threshold = self.env.spec.reward_threshold
 
